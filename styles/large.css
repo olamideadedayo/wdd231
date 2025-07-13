@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background: #00274d;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+header img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.intro-section h2{
+  text-align: center;
+  background-color: #004080;
+  color: white;
+}
+
+
+.column {
+  width: 48%;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.photo-placeholder {
+  width: 100%;
+  height: 200px;
+  background: #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+.courses-section {
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  
+}
+
+.courses-section h2 {
+  text-align: center;
+  background-color: #004080;
+  color: white;
+}
+
+.course-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.course-buttons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #00274d;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.course-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  background: #e6f2ff;
+  padding: 1rem;
+  border-left: 5px solid #004080;
+  font-weight: bold;
+  flex: 1 1 150px;
+}
+
+.credit-info {
+  margin-top: 1rem;
+  display: center;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons a {
+  margin: 0 10px;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+}
+.social-icons a img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+
+footer {
+  background: #00274d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adedayo Falana: WDD 231 Home</title>
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <meta name="author" content="Adedayo Joseph Falana">
+
+  <script defer src="scripts/course.js"></script>
+  <script defer src="scripts/date.js"></script>
+  <script  defer src="scripts/navigation.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <img src="images/chillmaster.svg" alt="Site-logo">
+      <button id="menuBtn" aria-label="Open navigation menu" aria-expanded="true">☰</button>
+    </div>
+    <nav id="navigation">
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#">Chamber Project</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="site-title">Adedayo Falana: WDD 231 Home</h1>
+    <section class="intro-section">
+      <div class="column about-me">
+        <h2>ABOUT ME</h2>
+        <p>
+         Hello, My name is Falana Adedayo Joseph, I am from Lagos Nigeria, I love listening to music and playing video games, also one other thing that interst me is that I love Bollyhood movies. I am keen to learning programming and I will dedicate enough time to learn it.
+        </p>
+      </div>
+      <div class="column student-photo">
+        <h2>Student Photo</h2>
+        <img src="images/profile.webp" alt="Adedayo Joseph photo">
+      </div>
+    </section>
+
+    <section class="courses-section">
+      <h2>Web Certificate Courses</h2>
+      <div class="course-buttons">
+        <button data-filter="all">All</button>
+        <button data-filter="CSE">CSE</button>
+        <button data-filter="WDD">WDD</button>
+      </div>
+      <div class="course-list" id="courseList">
+        <!-- Course cards will be rendered here by JS -->
+      </div>
+      <p class="credit-info">The total credits for courses listed above is <strong id="totalCredits">0</strong></p>
+    </section>
+
+    <section>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn-Logo"></a>
+        <a href="https://x.com"><img src="images/twitter.svg" alt="twitter-Logo"></a>
+        <a href="https://github.com/olamideadedayo"> <img src="images/github.png" alt="Github -Logo"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2025</span> ✡ Adedayo Joseph Falana ✡ Lagos, Nigeria</p>
+    <p id="lastModified">Last Modification: 07/10/2025</p>
+        
+      </footer>
+</body>
+</html>
