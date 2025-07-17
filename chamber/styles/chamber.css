@@ -182,6 +182,34 @@ nav a {
     max-width: 90vw;
 }
 
+.keynote-btn {
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+    padding: 0.7em 1.5em;
+    font-size: 1.1em;
+    background: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: background 0.2s;
+    z-index: 2;
+}
+.keynote-btn:hover {
+    background: #00274d;
+}
+
+@media (max-width: 700px) {
+  .keynote-btn {
+    right: 1em;
+    bottom: 1em;
+    font-size: 1em;
+    padding: 0.6em 1.1em;
+  }
+}
+
 .hero button {
     padding: 0.5em 1em;
     font-size: 1em;
