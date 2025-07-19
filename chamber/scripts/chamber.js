@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Ensure logo path is correct: if member.image already includes 'images/', use as is; else prepend 'images/'
       let logoPath = member.image.startsWith("images/") ? member.image : `images/${member.image}`;
       card.innerHTML = `
-        <img src="${logoPath}" alt="${member.name} logo" class="member-logo">
+        <img src="${logoPath}" alt="${member.name} logo" class="member-logo" width="50" height="50" loading="lazy">
         <h3>${member.name}</h3>
         <p>${member.address}</p>
         <p>${member.phone}</p>
