@@ -4,7 +4,7 @@
     "address": "12 Silicon Way, Ikeja, Lagos",
     "phone": "+234-803-456-7890",
     "website": "https://zubatech.ng",
-    "image": "zubatech.png",
+    "image": "images/ztech.svg",
     "membership": 3
   },
   {
@@ -12,75 +12,72 @@
     "address": "105 Alausa Rd, Ikeja",
     "phone": "+234-802-123-4567",
     "website": "https://greenmart.ng",
-    "image": "greenmart.png",
+    "image": "images/Green-Mart.svg",
     "membership": 2
   },
    {
-    "name": "Green Mart",
-    "address": "105 Alausa Rd, Ikeja",
-    "phone": "+234-802-123-4567",
-    "website": "https://greenmart.ng",
-    "image": "greenmart.png",
-    "membership": 2
-  },
+    "name": "Chill Master",
+    "address": "15 Olaoluwa Rd, Agege",
+    "phone": "+234-802-123-4344",
+    "website": "https://chillmaster.ng",
+    "image": "images/Chill-master.svg",
+    "membership": 1
+  }, 
 
-   {
-    "name": "Green Mart",
-    "address": "105 Alausa Rd, Ikeja",
-    "phone": "+234-802-123-4567",
-    "website": "https://greenmart.ng",
-    "image": "greenmart.png",
+  {
+    "name": "Sunrise Bakery",
+    "address": "123 Main St, Sunnyville",
+    "phone": "555-123-4567",
+    "website": "https://Sunrisebak.com",
+    "image": "images/sun-risse.svg",
+    "membership": 3
+  },
+  {
+    "name": "Green Leaf Landscaping",
+    "address": "456 Oak Ave, Sunnyville",
+    "phone": "555-987-6543",
+    "website": "https://greenleaflandscaping.com",
+    "image": "images/Lakeside-Real-Estate.svg",
     "membership": 2
   },
-
-   {
-    "name": "Green Mart",
-    "address": "105 Alausa Rd, Ikeja",
-    "phone": "+234-802-123-4567",
-    "website": "https://greenmart.ng",
-    "image": "greenmart.png",
+  {
+    "name": "TechNova Solutions",
+    "address": "789 Innovation Dr, Sunnyville",
+    "phone": "555-555-1212",
+    "website": "https://technovasolutions.com",
+    "image": "images/GreenTech-Solutions.svg",
+    "membership": 1
+  },
+  {
+    "name": "Blue Ocean Spa",
+    "address": "321 Relax Ln, Sunnyville",
+    "phone": "555-222-3333",
+    "website": "https://blueoceanspa.com",
+    "image": "images/Oceanic-Travel.svg",
     "membership": 2
   },
-   {
-    "name": "Green Mart",
-    "address": "105 Alausa Rd, Ikeja",
-    "phone": "+234-802-123-4567",
-    "website": "https://greenmart.ng",
-    "image": "greenmart.png",
-    "membership": 2
+  {
+    "name": "Mountain View Realty",
+    "address": "654 Summit Rd, Sunnyville",
+    "phone": "555-444-5555",
+    "website": "https://mountainviewrealty.com",
+    "image": "images/Mountain-view-Inn.svg",
+    "membership": 3
   },
-   {
-    "name": "Green Mart",
-    "address": "105 Alausa Rd, Ikeja",
-    "phone": "+234-802-123-4567",
-    "website": "https://greenmart.ng",
-    "image": "greenmart.png",
-    "membership": 2
+  {
+    "name": "Fitness First Gym",
+    "address": "987 Fit Blvd, Sunnyville",
+    "phone": "555-666-7777",
+    "website": "https://fitnessfirst.com",
+    "image": "images/City-Fitness-Center.svg",
+    "membership": 1
   },
-   {
-    "name": "Green Mart",
-    "address": "105 Alausa Rd, Ikeja",
-    "phone": "+234-802-123-4567",
-    "website": "https://greenmart.ng",
-    "image": "greenmart.png",
-    "membership": 2
-  },
-   {
-    "name": "Green Mart",
-    "address": "105 Alausa Rd, Ikeja",
-    "phone": "+234-802-123-4567",
-    "website": "https://greenmart.ng",
-    "image": "greenmart.png",
-    "membership": 2
-  },
-   {
-    "name": "Green Mart",
-    "address": "105 Alausa Rd, Ikeja",
-    "phone": "+234-802-123-4567",
-    "website": "https://greenmart.ng",
-    "image": "greenmart.png",
+  {
+    "name": "Sunnyville Bookstore",
+    "address": "159 Book St, Sunnyville",
+    "phone": "555-888-9999",
+    "website": "https://sunnyvillebooks.com",
+    "image": "images/Bright-Futur-Academy.svg",
     "membership": 2
   }
 ]
- 
-

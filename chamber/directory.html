@@ -1,123 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="Adedayo Falana's chamber of Commerce">
-    <meta name="author" content="Adedayo Joseph Falana">
-    <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Lagos Chamber of Commerce Directory" />
-    <meta property="og:description" content="Explore member businesses, discover upcoming events, and get the latest weather updates for Lagos. Connect with the local business community and stay informed." />
-    <meta property="og:url" content="/wdd231/chamber/directory.html" />
-    <link rel="icon" href="favicon.ico">
-    <title>Adedayo Joseph Falana: Lagos Chamber of Commerce</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Business directory for the Lagos Chamber of Commerce" />
+  <meta name="author" content="Adedayo Joseph Falana" />
 
-    <link rel="stylesheet" href="styles/chamber.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Facebook Open Graph Meta -->
+  <meta property="og:title" content="Lagos Chamber of Commerce Directory" />
+  <meta property="og:description" content="Explore local businesses and services in Lagos." />
+  <meta property="og:url" content="/wdd231/chamber/directory.html" />
+  <meta property="og:type" content="website" />
+  
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/chamber.css" />
+   <link rel="icon" href="favicon.ico">
+  <title>Lagos Chamber Directory</title>
 
-    <script src="scripts/chamber.js"></script>
-    <script src="../scripts/date.js"></script>
+  <script src="scripts/chamber.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <div class="header-flex">
-           <img src="../images/chillmaster.svg" alt="Site-logo">
-            <h1>Lagos Chamber of Commerce</h1>
-            
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="business.html">Business</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Lagos Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <!-- Add other nav links -->
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Welcome to Lagos Chamber</h2>
-        </div>
-        <button class="keynote-btn">Keynote Tickets</button>
-    </section>
-
-
-    <div class="info-row">
-        <div class="upcoming-events info-col">
-            <h2>Upcoming Events</h2>
-            <p>Stay tuned for exciting events in Lagos Chamber!</p>
-        </div>
-        <div class="weather info-col" id="current-weather">
-          <h2> current weather</h2>
-        </div>
-        <div class="forecast info-col" id="forecast">
-            <h2>Weather Forecast</h2>
-            <p>Current: 25°C, Sunny</p>
-            <p>Tomorrow: 27°C, Partly Cloudy</p>
-            <p>Next Week: Warm with occasional rain</p>
-        </div>
+  <main>
+    <div class="view-toggle">
+      <button id="grid-view">Grid View</button>
+      <button id="list-view">List View</button>
     </div>
-  
+    <section id="members" class="grid-view"></section>
+  </main>
 
-    <section class="business-listings">
-        <div class="business-card">
-            <h3>Fsower Net</h3>
-            <p>Innovating Today for a Better Tomorrow</p>
-            <hr>
-            <p>Email: Fsower@gmail.com</p>
-            <p>Contact: 123-456-7890</p>
-            <p>Url: Fsower.com</p>
-        </div>
-        <div class="business-card">
-            <h3>ChillMaster Tech</h3>
-            <p>Quality You Can Trust, Service You Deserve</p>
-            <hr>
-            <p>Email: Cmtech@yahoo.com</p>
-            <p>Contact: 987-788-3210</p>
-            <p>Url: CillM.co</p>
-        </div>
-        <div class="business-card">
-            <h3>Qwerty Park</h3>
-            <p>Our Vision, Our Mission</p>
-            <hr>
-            <p>Email: QwertyP@hotmail.com</p>
-            <p>Contact: 987-654-8432</p>
-            <p>Url: qwertPark.co.za</p>
-        </div>
-    </section>
-
-    <section class="page-footer">
-    <footer>
-      <div class="footer-flex">
-        <div class="footer-left">
-          <div class="about-chamber">
-            <p>Lagos Chamber of Commerce</p>
-            <p>114, Abeokuta express Lagos</p>
-            <p>Lagos, Niigeria</p>
-            <p>info@Lagoschamber.org</p>
-            <p>234-70-192-1266</p>
-          </div>
-        </div>
-        <div class="footer-center">
-         <div class="social-icons">
-          <a href="https://www.linkedin.com"><img src="../images/linkedin.svg" alt="LinkedIn-Logo"></a>
-          <a href="https://x.com"><img src="../images/twitter.svg" alt="twitter-Logo"></a>
-          <a href="https://github.com/olamideadedayo"> <img src="../images/github.png" alt="Github-Logo"></a>
-         </div>
-        </div>
-        <div class="footer-right">
-          <div class="footer">
-            <p>wdd231 class Project</p>
-            <p>&copy; <span id="year">2025</span> 💠 Adedayo Joseph Falana 💠 Lagos, Nigeria</p>
-            <p id="lastModified">Last Modification: 07/10/2025 </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    </section>
+  <footer>
+    <p>Contact: info@lagoschamber.com</p>
+    <p>&copy; <span id="year"></span> Adedayo Joseph Falana | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
 </body>
 </html>
