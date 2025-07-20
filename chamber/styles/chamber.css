@@ -1,3 +1,7 @@
+/* Hide member images in list view */
+.list-view .member-logo {
+  display: none;
+}
 /* Header left: logo and title side by side */
 .header-left {
   display: flex;
