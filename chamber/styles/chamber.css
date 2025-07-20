@@ -1,3 +1,64 @@
+/* Header left: logo and title side by side */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.header-left img {
+  margin-right: 1rem;
+}
+.header-left h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: left;
+}
+/* Header flex layout for logo left, nav center, title right */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #0077B6;
+  color: white;
+}
+
+header img {
+  margin-right: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0 1rem 0 0;
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+header nav {
+  margin-left: auto;
+}
+}
+
+header img {
+  order: 1;
+  margin-right: 1rem;
+}
+
+header h1 {
+  order: 3;
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: #ffffff;
+  flex: 1;
+  text-align: right;
+}
+
+header nav {
+  order: 2;
+  flex: 2;
+  text-align: center;
+}
 /* Responsive styles for mobile */
 @media (max-width: 600px) {
   .chamber-title,
