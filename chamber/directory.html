@@ -20,12 +20,14 @@
   <script src="scripts/chamber.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="all" onload="this.media='all'">
 
 </head>
 <body>
   <header>
     <h1>Lagos Chamber of Commerce</h1>
+    <img src="../images/chillmaster.svg" alt="Site-logo" width="48" height="48" loading="lazy">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
