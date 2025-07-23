@@ -1,5 +1,40 @@
 
 document.addEventListener("DOMContentLoaded", () => {
+  // WEATHER API LOGIC
+  const weatherContainer = document.getElementById("current-weather");
+  const forecastContainer = document.getElementById("forecast");
+  const city = "Lagos";
+  const apiKey = "YOUR_API_KEY"; // <-- Replace with your OpenWeatherMap API key
+
+  // Fetch current weather
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+    .then(response => response.json())
+    .then(data => {
+      weatherContainer.innerHTML = `
+        <h2>Current Weather</h2>
+        <p>${data.weather[0].description}, ${data.main.temp}°C</p>
+        <p>Humidity: ${data.main.humidity}%</p>
+        <p>Wind: ${data.wind.speed} m/s</p>
+      `;
+    })
+    .catch(error => {
+      weatherContainer.innerHTML = "<p>Unable to fetch weather data.</p>";
+    });
+
+  // Fetch weather forecast
+  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`)
+    .then(response => response.json())
+    .then(data => {
+      let forecastHTML = "<h2>Weather Forecast</h2>";
+      for (let i = 0; i < 3; i++) {
+        const forecast = data.list[i];
+        forecastHTML += `<p>${forecast.dt_txt}: ${forecast.weather[0].description}, ${forecast.main.temp}°C</p>`;
+      }
+      forecastContainer.innerHTML = forecastHTML;
+    })
+    .catch(error => {
+      forecastContainer.innerHTML = "<p>Unable to fetch forecast data.</p>";
+    });
   const membersContainer = document.getElementById("members");
   const gridBtn = document.getElementById("grid-view");
   const listBtn = document.getElementById("list-view");
