@@ -8,7 +8,8 @@
     <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="Lagos Chamber of Commerce Directory" />
     <meta property="og:description" content="Explore member businesses, discover upcoming events, and get the latest weather updates for Lagos. Connect with the local business community and stay informed." />
-    <meta property="og:url" content="/wdd231/chamber/directory.html" />
+    <meta property="og:url" content="/wdd231/chamber/join.html" />
+    <meta property="og:image" content="../images/chillmaster.svg" />
     <link rel="icon" href="favicon.ico">
     <title>Adedayo Joseph Falana: Lagos Chamber of Commerce Join Form</title>
 
@@ -24,30 +25,11 @@
     <link rel="stylesheet" href="scripts/join.js">
 
     <script src="scripts/join.js"></script>
-    <style>
-.modal button {
-  display: block;
-  margin: 1em auto 0 auto;
-  background: #004d66;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 0.6em 1.5em;
-  font-size: 1em;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: background 0.2s;
-}
-.modal button:hover {
-  background: #0077B6;
-}
-</style>
 </head>
 <body>
     <header>
         <div class="header-flex">
            <img src="../images/chillmaster.svg" alt="Site-logo">
-            <h1>Lagos Chamber of Commerce</h1>
         </div>
         <nav>
             <ul>
@@ -60,6 +42,7 @@
         </nav>
     </header>
     <main>
+        <h1>Adedayo Joseph Falana: Lagos Chamber of Commerce Join Form</h1>
         <form method="get" action="thankyou.html">
 
             <label>First Name:
@@ -95,22 +78,22 @@
             <input type="submit" value="Submit Application">
         </form>
 
-        <section class="membership-cards" style="display: flex; gap: 1.5em; justify-content: center; flex-wrap: wrap; margin: 2em 0;">
+        <section class="membership-cards">
             <div class="membership-card">
                 <h3>NP Membership</h3>
-                <a href="javascript:showModal('modalNP')">More Info</a>
+                <button type="button" onclick="showModal('modalNP')" aria-controls="modalNP">More Info</button>
             </div>
             <div class="membership-card">
                 <h3>Bronze Membership</h3>
-                <a href="javascript:showModal('modalBronze')">More Info</a>
+                <button type="button" onclick="showModal('modalBronze')" aria-controls="modalBronze">More Info</button>
             </div>
             <div class="membership-card">
                 <h3>Silver Membership</h3>
-                <a href="javascript:showModal('modalSilver')">More Info</a>
+                <button type="button" onclick="showModal('modalSilver')" aria-controls="modalSilver">More Info</button>
             </div>
             <div class="membership-card">
                 <h3>Gold Membership</h3>
-                <a href="javascript:showModal('modalGold')">More Info</a>
+                <button type="button" onclick="showModal('modalGold')" aria-controls="modalGold">More Info</button>
             </div>
         </section>
 
@@ -165,6 +148,22 @@ window.onclick = function(event) {
     }
   });
 };
+document.addEventListener("DOMContentLoaded", function() {
+  // Set timestamp hidden field to current date/time
+  var ts = document.getElementById('timestamp');
+  if (ts) {
+    var now = new Date();
+    var formatted = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0') + '-' + String(now.getDate()).padStart(2,'0') + ' ' + String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0');
+    ts.value = formatted;
+  }
+  // Animate membership cards
+  var cards = document.querySelectorAll('.membership-card');
+  cards.forEach(function(card, i) {
+    setTimeout(function() {
+      card.classList.add('visible');
+    }, 300 + i * 250);
+  });
+});
 </script>
 </body>
 </html>

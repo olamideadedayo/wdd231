@@ -1,3 +1,40 @@
+/* Modal button styles */
+.modal button {
+  display: block;
+  margin: 1em auto 0 auto;
+  background: #004d66;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.modal button:hover {
+  background: #0077B6;
+}
+
+/* Membership card animation */
+.membership-card {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: opacity 1.2s cubic-bezier(.4,0,.2,1), transform 1.2s cubic-bezier(.4,0,.2,1);
+}
+.membership-card.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Membership cards layout */
+.membership-cards {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
 .membership-card {
     opacity: 0;
     margin-left: -50px;
