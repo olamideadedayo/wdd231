@@ -1,0 +1,124 @@
+.membership-card {
+    opacity: 0;
+    margin-left: -50px;
+    transition: opacity 2s ease, margin-left 2s ease;
+}
+.membership-card.visible {
+    opacity: 1;
+    margin-left: 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    background: white;
+    padding: 1em;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+.h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+form {
+  background: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2em 2.5em;
+  max-width: 400px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form label, form input, form select {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.3em 0.5em 0.3em 0;
+}
+form label {
+  min-width: 90px;
+  font-weight: 500;
+  color: #004d66;
+}
+form .form-row {
+  width: 100%;
+  margin-bottom: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+form input, form select {
+  padding: 0.4em 0.7em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+.form-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1em;
+}
+main p {
+  text-align: center;
+}
+@media (max-width: 700px) {
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  main, form {
+    max-width: 98vw;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+  }
+  .form-title {
+    font-size: 2em;
+  }
+  .membership-cards {
+    flex-direction: column !important;
+    gap: 1em !important;
+    align-items: center !important;
+  }
+  .membership-card {
+    width: 100%;
+    min-width: 0;
+    margin: 0.5em 0;
+  }
+  .footer-flex {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1em;
+  }
+  .footer-left, .footer-right {
+    text-align: left;
+    min-width: 0;
+  }
+  .footer-right {
+    margin-top: 0.5em;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .footer-center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .social-icons {
+    justify-content: center;
+    margin-left: 0;
+  }
+}

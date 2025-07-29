@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Adedayo Falana's chamber of Commerce">
+    <meta name="author" content="Adedayo Joseph Falana">
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Lagos Chamber of Commerce Directory" />
+    <meta property="og:description" content="Explore member businesses, discover upcoming events, and get the latest weather updates for Lagos. Connect with the local business community and stay informed." />
+    <meta property="og:url" content="/wdd231/chamber/directory.html" />
+    <link rel="icon" href="favicon.ico">
+    <title>Adedayo Joseph Falana: Lagos Chamber of Commerce Join Form</title>
+
+    <link rel="stylesheet" href="styles/home2.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/home.js"></script>
+    <script src="../scripts/date.js"></script>
+    <link rel="stylesheet" href="styles/join.css">
+
+    <link rel="stylesheet" href="scripts/join.js">
+
+    <script src="scripts/join.js"></script>
+    <style>
+.modal button {
+  display: block;
+  margin: 1em auto 0 auto;
+  background: #004d66;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+}
+.modal button:hover {
+  background: #0077B6;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="header-flex">
+           <img src="../images/chillmaster.svg" alt="Site-logo">
+            <h1>Lagos Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Discover</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html">
+
+            <label>First Name:
+                <input type="text" name="firstName" required title="First Name" autocomplete="given-name">
+            </label><br>
+            <label>Last Name:
+                <input type="text" name="lastName" required title="Last Name" autocomplete="family-name">
+            </label><br>
+            <label>Organizational Title:
+                <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\\-\\s]{7,}">
+            </label><br>
+            <label>Email:
+                <input type="email" name="email" required title="Email Address" autocomplete="email" placeholder="example@domain.com">
+            </label><br>
+            <label>Mobile Phone:
+                <input type="tel" name="phone" required title="Mobile Phone" autocomplete="tel">
+            </label><br>
+            <label>Organization Name:
+                <input type="text" name="organization" required title="Organization Name" autocomplete="organization">
+            </label><br>
+            <label>Membership Level:
+                <select name="membershipLevel">
+                    <option value="NP">NP Membership</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            </label><br>
+            <label>Description:
+                <textarea name="description" title="Organization Description"></textarea>
+            </label><br>
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <input type="submit" value="Submit Application">
+        </form>
+
+        <section class="membership-cards" style="display: flex; gap: 1.5em; justify-content: center; flex-wrap: wrap; margin: 2em 0;">
+            <div class="membership-card">
+                <h3>NP Membership</h3>
+                <a href="javascript:showModal('modalNP')">More Info</a>
+            </div>
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <a href="javascript:showModal('modalBronze')">More Info</a>
+            </div>
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <a href="javascript:showModal('modalSilver')">More Info</a>
+            </div>
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <a href="javascript:showModal('modalGold')">More Info</a>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div id="modalNP" class="modal"><div><h2>NP Membership Benefits</h2><p>No fee. Access to community events.</p><button onclick="closeModal('modalNP')">Close</button></div></div>
+        <div id="modalBronze" class="modal"><div><h2>Bronze Membership Benefits</h2><p>Includes training and event discounts.</p><button onclick="closeModal('modalBronze')">Close</button></div></div>
+        <div id="modalSilver" class="modal"><div><h2>Silver Membership Benefits</h2><p>Includes advertising and spotlight positions.</p><button onclick="closeModal('modalSilver')">Close</button></div></div>
+        <div id="modalGold" class="modal"><div><h2>Gold Membership Benefits</h2><p>All benefits plus premium event access.</p><button onclick="closeModal('modalGold')">Close</button></div></div>
+    </main>
+    <section class="page-footer">
+    <footer>
+      <div class="footer-flex">
+        <div class="footer-left">
+          <div class="about-chamber">
+            <p>Lagos Chamber of Commerce</p>
+            <p>114, Abeokuta express Lagos</p>
+            <p>Lagos, Niigeria</p>
+            <p>info@Lagoschamber.org</p>
+            <p>234-70-192-1266</p>
+          </div>
+        </div>
+        <div class="footer-center">
+         <div class="social-icons">
+          <a href="https://www.linkedin.com"><img src="../images/linkedin.svg" alt="LinkedIn-Logo"></a>
+          <a href="https://x.com"><img src="../images/twitter.svg" alt="twitter-Logo"></a>
+          <a href="https://github.com/olamideadedayo"> <img src="../images/github.png" alt="Github-Logo"></a>
+         </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer">
+            <p>wdd231 class Project</p>
+            <p>&copy; <span id="year">2025</span> 💠 Adedayo Joseph Falana 💠 Lagos, Nigeria</p>
+            <p id="lastModified">Last Modification: 07/10/2025 </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </section>
+    <script>
+function showModal(id) {
+  document.getElementById(id).style.display = 'block';
+}
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+// Optional: close modal when clicking outside
+window.onclick = function(event) {
+  ['modalNP','modalBronze','modalSilver','modalGold'].forEach(function(id) {
+    var modal = document.getElementById(id);
+    if (modal && event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+};
+</script>
+</body>
+</html>
