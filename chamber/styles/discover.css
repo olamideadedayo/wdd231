@@ -1,0 +1,178 @@
+/* Header flex for favicon and title */
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+    margin-left: 1em;
+}
+
+header img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+header {
+    background-color: #004d66 !important;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    margin-left: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer flex layout */
+.footer-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
+  background-color: #004d66;
+}
+
+.footer-left {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.footer-center {
+  flex: 1 1 200px;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-right {
+  flex: 1 1 200px;
+  min-width: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.about-chamber {
+  font-size: 0.95em;
+  color: #eee;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  margin: 0 0.3em;
+  vertical-align: middle;
+}
+
+.footer {
+  font-size: 0.9em;
+  color: #eee;
+  text-align: right;
+
+}
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card address {
+  font-style: normal;
+  color: #555;
+}
+
+.card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Grid Areas */
+@media screen and (max-width: 640px) {
+  .card-grid {
+    grid-template-areas:
+      "item1" "item2" "item3" "item4"
+      "item5" "item6" "item7" "item8";
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .card-grid {
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4"
+      "item5 item6"
+      "item7 item8";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .card-grid {
+    grid-template-areas:
+      "item1 item2 item3 item4"
+      "item5 item6 item7 item8";
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card img:hover {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+/* Assign grid-area classes */
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: item3; }
+.item4 { grid-area: item4; }
+.item5 { grid-area: item5; }
+.item6 { grid-area: item6; }
+.item7 { grid-area: item7; }
+.item8 { grid-area: item8; }

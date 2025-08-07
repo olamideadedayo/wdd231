@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preload" href="data/discover.json" as="fetch" type="application/json" crossorigin>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Business directory for the Lagos Chamber of Commerce" />
+  <meta name="author" content="Adedayo Joseph Falana" />
+
+  <!-- Facebook Open Graph Meta -->
+  <meta property="og:title" content="Lagos Chamber of Commerce Directory" />
+  <meta property="og:description" content="Explore local businesses and services in Lagos." />
+  <meta property="og:url" content="/wdd231/chamber/directory.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://yourdomain.com/wdd231/images/medium.webp" />
+
+
+  <link rel="stylesheet" href="styles/discover.css" />
+   <link rel="icon" href="favicon.ico">
+  <title>Lagos Chamber Directory</title>
+
+  <script src="scripts/discover.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" media="all" onload="this.media='all'">
+
+</head>
+<body>
+    <header>
+        <div class="header-flex">
+           <img src="../images/chillmaster.svg" alt="Site-logo">
+            <h1>Lagos Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <aside id="visitMessage" style="margin:1em 0;"></aside>
+    <section class="card-grid"></section>
+  </main>
+
+    <section class="page-footer">
+    <footer>
+      <div class="footer-flex">
+        <div class="footer-left">
+          <div class="about-chamber">
+            <p>Lagos Chamber of Commerce</p>
+            <p>114, Abeokuta express Lagos</p>
+            <p>Lagos, Niigeria</p>
+            <p>info@Lagoschamber.org</p>
+            <p>234-70-192-1266</p>
+          </div>
+        </div>
+        <div class="footer-center">
+         <div class="social-icons">
+          <a href="https://www.linkedin.com"><img src="../images/linkedin.svg" alt="LinkedIn-Logo"></a>
+          <a href="https://x.com"><img src="../images/twitter.svg" alt="twitter-Logo"></a>
+          <a href="https://github.com/olamideadedayo"> <img src="../images/github.png" alt="Github-Logo"></a>
+         </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer">
+            <p>wdd231 class Project</p>
+            <p>&copy; <span id="year">2025</span> 💠 Adedayo Joseph Falana 💠 Lagos, Nigeria</p>
+            <p id="lastModified">Last Modification: 07/10/2025 </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </section>
+</body>
+</html>

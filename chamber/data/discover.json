@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Lekki Conservation Centre",
+    "address": "Km 19 Lekki-Epe Expressway",
+    "description": "Home to Nigeria's longest canopy walkway and a haven for wildlife lovers.",
+    "image": "images/lekki.webp"
+  },
+  {
+    "name": "Nike Art Gallery",
+    "address": "2 Elegushi Beach Rd, Lekki",
+    "description": "A treasure trove of African creativity with thousands of contemporary artworks.",
+    "image": "images/nikeart.webp"
+  },
+  {
+    "name": "Freedom Park",
+    "address": "Broad Street, Lagos Island",
+    "description": "A historic site turned cultural center for concerts, festivals, and art exhibits.",
+    "image": "images/freedom.webp"
+  },
+  {
+    "name": "National Museum Lagos",
+    "address": "Awolowo Road, Ikoyi",
+    "description": "Features notable Nigerian artifacts including Benin bronzes and Nok Terracotta.",
+    "image": "images/museum.webp"
+  },
+  {
+    "name": "Elegushi Beach",
+    "address": "Lekki, Lagos",
+    "description": "A vibrant beach scene known for parties, food, and stunning sunsets.",
+    "image": "images/elegushi.webp"
+  },
+  {
+    "name": "Kalakuta Museum",
+    "address": "Gbemisola St, Ikeja",
+    "description": "Former home of Afrobeat legend Fela Kuti, now a museum celebrating his legacy.",
+    "image": "images/kalakuta.webp"
+  },
+  {
+    "name": "Eko Atlantic City",
+    "address": "Ahmadu Bello Way, Victoria Island",
+    "description": "An ambitious coastal city project transforming Lagos into a global business hub.",
+    "image": "images/ekoatlantic.webp"
+  },
+  {
+    "name": "Tarkwa Bay Beach",
+    "address": "Tarkwa Bay Island",
+    "description": "A serene beach accessible by boat, popular for surfing and relaxation.",
+    "image": "images/tarkwa.webp"
+  }
+]
