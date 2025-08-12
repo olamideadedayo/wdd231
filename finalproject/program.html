@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+     <link rel="preload" href="data/program.json" as="fetch" type="application/json" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover ChillMaster Tech Hub's HVAC programs and services including installation, servicing, maintenance, and training." />
+    <meta name="author" content="Adedayo Falana" />
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="ChillMaster Tech Hub - Programs & Services" />
+    <meta property="og:description" content="Explore HVAC installation, servicing, maintenance, and training programs at ChillMaster Tech Hub in Nigeria." />
+    <meta property="og:image" content="images/havcs.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://olamiideadedayo.github.io/wdd231/finalproject/programs.html" />
+
+    <title>ChillMaster Tech Hub - Programs & Services</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="final.css/program.css" />
+    <script type="module" src="final-js/program.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/chillmaster.svg" alt="ChillMaster Tech Hub Logo" />
+            <h1>ChillMaster Tech Hub</h1>
+        </div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html" class="active">Programs & Services</a></li>
+                <li><a href="contact.html">Contact & Community</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="programs">
+            <h2>Our Programs & Services</h2>
+            <p>
+                At ChillMaster Tech Hub, we offer a variety of HVAC-related services and programs 
+                designed to meet the needs of both individuals and businesses.
+            </p>
+            <ul>
+                <li><strong>HVAC Installation:</strong> Professional setup of heating, ventilation, and air conditioning systems.</li>
+                <li><strong>Servicing & Maintenance:</strong> Regular upkeep to ensure efficiency and safety.</li>
+                <li><strong>Technical Training:</strong> Hands-on workshops for aspiring HVAC technicians.</li>
+                <li><strong>Startup Incubation:</strong> Support for entrepreneurs launching HVAC-related businesses.</li>
+            </ul>
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Events & Workshops</h2>
+            <div id="events-calendar">
+                <!-- Events will be dynamically fetched and displayed here -->
+            </div>
+        </section>
+
+        <section class="apply">
+            <h2>Join Our Hub</h2>
+            <p>
+                Ready to take your HVAC skills or business to the next level? Apply now to become a member of ChillMaster Tech Hub.
+            </p>
+            <a href="contact.html" class="btn">Apply Now</a>
+        </section>
+    </main>
+    <section>
+   <footer>
+      <div class="footer-flex">
+        <div class="footer-left">
+          <div class="about-chamber">
+            <p>Lagos Chamber of Commerce</p>
+            <p>114, Abeokuta express Lagos</p>
+            <p>Lagos, Niigeria</p>
+            <p>info@Lagoschamber.org</p>
+            <p>234-70-192-1266</p>
+          </div>
+        </div>
+        <div class="footer-center">
+         <div class="social-icons">
+          <a href="https://www.linkedin.com"><img src="../images/linkedin.svg" alt="LinkedIn-Logo"></a>
+          <a href="https://x.com"><img src="../images/twitter.svg" alt="twitter-Logo"></a>
+          <a href="https://github.com/olamideadedayo"> <img src="../images/github.png" alt="Github-Logo"></a>
+        <p><a href="attributions.html">Attributions</a></p>
+        </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer">
+            <p>wdd231 class Project</p>
+            <p>&copy; <span id="year">2025</span> 💠 Adedayo Joseph Falana 💠 Lagos, Nigeria</p>
+            <p id="lastModified">Last Modification: 07/10/2025 </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </section>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+    {
+        "name": "CoolAir Solutions",
+        "description": "Specializes in eco-friendly air conditioning systems.",
+        "year": "2020",
+        "location": "Lagos, Nigeria",
+        "image": "coolair.jpg"
+    },
+    {
+        "name": "Arctic Breeze",
+        "description": "Offers premium HVAC maintenance plans.",
+        "year": "2019",
+        "location": "Abuja, Nigeria",
+        "image": "arcticbreeze.jpg"
+    },
+    {
+        "name": "FreshFlow Tech",
+        "description": "Smart ventilation systems for homes and offices.",
+        "year": "2021",
+        "location": "Port Harcourt, Nigeria",
+        "image": "freshflow.jpg"
+    }
+]

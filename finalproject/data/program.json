@@ -1,0 +1,20 @@
+[
+    {
+        "title": "HVAC Installation Workshop",
+        "date": "2025-09-15",
+        "location": "Lagos",
+        "description": "Hands-on training on the latest HVAC installation techniques."
+    },
+    {
+        "title": "Energy-Efficient Systems Seminar",
+        "date": "2025-10-02",
+        "location": "Abuja",
+        "description": "Learn about energy-saving HVAC technologies and government incentives."
+    },
+    {
+        "title": "Startup Pitch Night",
+        "date": "2025-11-20",
+        "location": "Online",
+        "description": "Showcase your HVAC startup ideas to investors."
+    }
+]

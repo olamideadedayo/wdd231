@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="preload" href="data/index.json" as="fetch" type="application/json" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to ChillMaster Tech Hub – Nigeria's hub for HVAC installation, servicing, and tech innovation." />
+    <meta name="author" content="Adedayo Joseph Falana" />
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="ChillMaster Tech Hub" />
+    <meta property="og:description" content="HVAC innovation and services in Nigeria – Installation, Maintenance, and Tech Incubation." />
+    <meta property="og:image" content="../images/chillmaster.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://olamideadedayo.github.io/wdd231/finalproject/" />
+
+    <title>ChillMaster Tech Hub - Programs & Services</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="styles/home2.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/home.js"></script>
+    <script src="../scripts/date.js"></script>
+    <link rel="stylesheet" href="final.css/form.css">
+
+    <link rel="stylesheet" href="final-js/form.js">
+
+    <script src="final-js/form.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-flex">
+        <div class="logo">
+           <img src="../images/chillmaster.svg" alt="Site-logo">
+            <h1>ChillMaster Tech Hub</h1>
+        </div>
+
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="program.html">Programs & Services</a></li>
+                <li><a href="contact.html">Contact & Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Chillmaster Joining Form</h2>
+        <form method="get" action="thankyou.html">
+
+            <label>First Name:
+                <input type="text" name="firstName" required title="First Name" autocomplete="given-name">
+            </label><br>
+            <label>Last Name:
+                <input type="text" name="lastName" required title="Last Name" autocomplete="family-name">
+            </label><br>
+            <label>Organizational Title:
+                <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\\-\\s]{7,}">
+            </label><br>
+            <label>Email:
+                <input type="email" name="email" required title="Email Address" autocomplete="email" placeholder="example@domain.com">
+            </label><br>
+            <label>Mobile Phone:
+                <input type="tel" name="phone" required title="Mobile Phone" autocomplete="tel">
+            </label><br>
+            <label>Organization Name:
+                <input type="text" name="organization" title="Organization Name" autocomplete="organization">
+            </label><br>
+            <label>Why Joining:
+                <select name="Reasons for contacting">
+                    <option value="Service">Sevice Request</option>
+                    <option value="Training">Training</option>
+                    <option value="Partnership">Partnership</option>
+                </select>
+            </label><br>
+            <label>Description:
+                <textarea name="description" title="Organization Description"></textarea>
+            </label><br>
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <input type="submit" value="Submit Application">
+        </form>
+
+    </main>
+    <section class="page-footer">
+    <footer>
+      <div class="footer-flex">
+        <div class="footer-left">
+          <div class="about-chamber">
+            <p>Lagos Chamber of Commerce</p>
+            <p>114, Abeokuta express Lagos</p>
+            <p>Lagos, Niigeria</p>
+            <p>info@Lagoschamber.org</p>
+            <p>234-70-192-1266</p>
+          </div>
+        </div>
+        <div class="footer-center">
+         <div class="social-icons">
+          <a href="https://www.linkedin.com"><img src="../images/linkedin.svg" alt="LinkedIn-Logo"></a>
+          <a href="https://x.com"><img src="../images/twitter.svg" alt="twitter-Logo"></a>
+          <a href="https://github.com/olamideadedayo"> <img src="../images/github.png" alt="Github-Logo"></a>
+         </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer">
+            <p>wdd231 class Project</p>
+            <p>&copy; <span id="year">2025</span> 💠 Adedayo Joseph Falana 💠 Lagos, Nigeria</p>
+            <p id="lastModified">Last Modification: 07/10/2025 </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </section>
+    <script>
+function showModal(id) {
+  document.getElementById(id).style.display = 'block';
+}
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+// Optional: close modal when clicking outside
+window.onclick = function(event) {
+  ['modalNP','modalBronze','modalSilver','modalGold'].forEach(function(id) {
+    var modal = document.getElementById(id);
+    if (modal && event.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+};
+document.addEventListener("DOMContentLoaded", function() {
+  // Set timestamp hidden field to current date/time
+  var ts = document.getElementById('timestamp');
+  if (ts) {
+    var now = new Date();
+    var formatted = now.getFullYear() + '-' + String(now.getMonth()+1).padStart(2,'0') + '-' + String(now.getDate()).padStart(2,'0') + ' ' + String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0');
+    ts.value = formatted;
+  }
+  // Animate membership cards
+  var cards = document.querySelectorAll('.membership-card');
+  cards.forEach(function(card, i) {
+    setTimeout(function() {
+      card.classList.add('visible');
+    }, 300 + i * 250);
+  })
+})
+</script>
+</body>
+</html>

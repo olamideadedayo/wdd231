@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get in touch with ChillMaster Tech Hub for HVAC services, training, and community programs." />
+    <meta name="author" content="Adedayo Falana" />
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="ChillMaster Tech Hub - Contact & Community" />
+    <meta property="og:description" content="Reach out to ChillMaster Tech Hub for HVAC installation, maintenance, and tech incubation services." />
+    <meta property="og:image" content="images/havcs.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://olamideadedayo.github.io/wdd231/finalproject/contact.html" />
+
+    <title>ChillMaster Tech Hub - Contact & Community</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="final.css/contact.css" />
+    <script type="module" src="final-js/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/chillmaster.svg" alt="ChillMaster Tech Hub Logo" />
+            <h1>ChillMaster Tech Hub</h1>
+        </div>
+        <nav>
+            <button id="menu-toggle" aria-label="Menu">&#9776;</button>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs & Services</a></li>
+                <li><a href="contact.html" class="active">Contact & Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="form-confirmation.html" method="get">
+                <p>We'd love to hear from you! Please fill out the form below:</p>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Reason for Contact:</label>
+                <input type="radio" id="service" name="reason" value="service">
+                <label for="service">Service Request</label>
+
+                <input type="radio" id="training" name="reason" value="training">
+                <label for="training">Training Inquiry</label>
+
+                <input type="radio" id="partnership" name="reason" value="partnership">
+                <label for="partnership">Partnership</label>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter"> Subscribe to our newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="location">
+            <h2>Our Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.960327565512!2d3.379205314265138!3d6.524379995289029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b1f4a7e87e3%3A0x9d7a088c9d084e67!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1672531192337!5m2!1sen!2sng"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+        <section class="community">
+            <h2>Join Our Community</h2>
+            <p>Follow us on social media and stay connected with the latest HVAC innovations in Nigeria.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
+  <section class="page-footer">
+    <footer>
+      <div class="footer-flex">
+        <div class="footer-left">
+          <div class="about-chamber">
+            <p>Lagos Chamber of Commerce</p>
+            <p>114, Abeokuta express Lagos</p>
+            <p>Lagos, Niigeria</p>
+            <p>info@Lagoschamber.org</p>
+            <p>234-70-192-1266</p>
+          </div>
+        </div>
+        <div class="footer-center">
+         <div class="social-icons">
+          <a href="https://www.linkedin.com"><img src="../images/linkedin.svg" alt="LinkedIn-Logo"></a>
+          <a href="https://x.com"><img src="../images/twitter.svg" alt="twitter-Logo"></a>
+          <a href="https://github.com/olamideadedayo"> <img src="../images/github.png" alt="Github-Logo"></a>
+        <p><a href="attributions.html">Attributions</a></p>
+        </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer">
+            <p>wdd231 class Project</p>
+            <p>&copy; <span id="year">2025</span> 💠 Adedayo Joseph Falana 💠 Lagos, Nigeria</p>
+            <p id="lastModified">Last Modification: 07/10/2025 </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </section>
+</body>
+</html>
