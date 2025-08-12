@@ -24,4 +24,29 @@ function showModal(id) {
 }
 function closeModal(id) {
     document.getElementById(id).style.display = 'none';
+
+
+
+// Get query parameters from URL
+function getQueryParams() {
+  const params = {};
+  window.location.search.replace(/^[?]/, '').split('&').forEach(function(pair) {
+    const [key, value] = pair.split('=');
+    if (key) params[key] = decodeURIComponent(value || '');
+  });
+  return params;
 }
+window.onload = function() {
+  const params = getQueryParams();
+  if (params.firstName) document.getElementById('firstName').textContent = params.firstName;
+  if (params.lastName) document.getElementById('lastName').textContent = params.lastName;
+  if (params.email) document.getElementById('email').textContent = params.email;
+  if (params.phone) document.getElementById('phone').textContent = params.phone;
+  if (params.organization) document.getElementById('organization').textContent = params.organization;
+  if (params.timestamp) document.getElementById('timestamp').textContent = params.timestamp;
+};
+
+}
+
+
+
